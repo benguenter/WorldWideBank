@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace WorldWideBank.Domain
 {
+    /// <summary>
+    /// Helper class to initialize Results.
+    /// </summary>
     public static class Result
     {
         public static Result<T> Ok<T>(T value)
@@ -16,6 +19,11 @@ namespace WorldWideBank.Domain
         }
     }
 
+    /// <summary>
+    /// Helper class to return either a result or Errors.
+    /// Helps to avoid returning null and throwing exceptions
+    /// Inspired by FSharp's Result.
+    /// </summary>
     public class Result<T>
     {
         internal Result(IEnumerable<string> errors, T value)

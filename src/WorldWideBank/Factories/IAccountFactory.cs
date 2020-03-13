@@ -11,7 +11,7 @@ namespace WorldWideBank.Factories
         /// Finds an account identified by <param name="accountNumber" />
         /// </summary>
         /// <remarks>
-        /// For the purposes of this test, we will assume that requests are always valid.
+        /// For the purposes of this test, we will assume that requests for accounts are always valid.
         /// Normally this method would also return a success/fail value plus error messages.
         /// </remarks>
         Account GetAccount(string accountNumber);
